@@ -9,6 +9,12 @@ public class Refresco {
     public double valorPagadoRefresco(){
         return 0;
     }
+    public  double valorReal_Refresco(){
+        return 0;
+    }
+    public double valorIVA_Refresco(){
+        return 0;
+    }
 
     @Override
     public String toString() {
