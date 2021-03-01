@@ -23,22 +23,27 @@ public class Hidratante {
         return unidadesR;
     }
 
-    public double PagadoHidratante()    {
-        return 0;
-    }
-    public double valorReal_Hidratante(){
-        return 0;
-    }
-    public double valorIVA_Hidratante(){
-        return  0;
-    }
-
     @Override
     public String toString() {
-        return "Hidratante{" +
-                "unidadesA=" + unidadesA +
-                ", unidadesG=" + unidadesG +
-                ", unidadesR=" + unidadesR +
-                '}';
+        return "Unidades de Agua" + unidadesA +
+                "\n Unidades de Gatorade: " + unidadesG +
+                "\n Unidades de RedBull: " + unidadesR +
+                "\n Valor pagado por bebidas hidra tantes: " + valorPagadoHidratante() +
+                "\n valor real de las bebidas hidratantes: " + valorReal_Hidratante() +
+                "\n Valor pagado por concepto de IVA: " + valorIVA_Hidratante();
     }
+
+    public double valorPagadoHidratante() {
+        return 1000 * unidadesA + 2000 * unidadesG + 2450 * unidadesR;
+    }
+
+    public double valorReal_Hidratante() {
+        return (unidadesG * 2000 + unidadesR * 2450)/1.16 + unidadesA * 1000/(1+0.0/100) ;
+    }
+
+    public double valorIVA_Hidratante() {
+        return (unidadesG * 2000 + unidadesR * 2450)*0.16;
+    }
+
+
 }

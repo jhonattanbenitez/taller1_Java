@@ -11,14 +11,15 @@ public class Competidor {
         return hidratante;
     }
 
+
+
     public double recaudoHidratante(){
-        return 0;
+        return (hidratante.valorReal_Hidratante());
     }
 
     @Override
     public String toString() {
-        return "Competidor{" +
-                "hidratante=" + hidratante +
-                '}';
+        return hidratante.toString();
     }
 }
+
