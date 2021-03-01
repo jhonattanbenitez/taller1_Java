@@ -23,9 +23,9 @@ public class Licor {
     public String toString() {
         return "Unidades de cerveza: " + unidadesC +
                 "\n Unidades de ron:" + unidadesR +
-                "\n Valor pagado en licores: " + valorPagadoLicor() +
-                "\n Valor Real del licor : " + valorReal_Licor() +
-                "\n Valor pagado por concepto de IVA" + valorIVA_Licor();
+                "\n Valor pagado en licores: $" + valorPagadoLicor() +
+                "\n Valor Real del licor : $" + valorReal_Licor() +
+                "\n Valor pagado por concepto de IVA $" + valorIVA_Licor();
     }
 
     public double valorPagadoLicor() {

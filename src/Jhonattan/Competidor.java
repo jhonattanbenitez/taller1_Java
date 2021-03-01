@@ -12,8 +12,7 @@ public class Competidor {
     }
 
 
-
-    public double recaudoHidratante(){
+    public double recaudoHidratante() {
         return (hidratante.valorReal_Hidratante());
     }
 

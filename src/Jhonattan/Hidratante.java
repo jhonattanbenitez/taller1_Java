@@ -25,12 +25,12 @@ public class Hidratante {
 
     @Override
     public String toString() {
-        return "Unidades de Agua" + unidadesA +
+        return "Unidades de Agua: " + unidadesA +
                 "\n Unidades de Gatorade: " + unidadesG +
                 "\n Unidades de RedBull: " + unidadesR +
-                "\n Valor pagado por bebidas hidra tantes: " + valorPagadoHidratante() +
-                "\n valor real de las bebidas hidratantes: " + valorReal_Hidratante() +
-                "\n Valor pagado por concepto de IVA: " + valorIVA_Hidratante();
+                "\n Valor pagado por bebidas hidratantes: $" + valorPagadoHidratante() +
+                "\n valor real de las bebidas hidratantes: $" + valorReal_Hidratante() +
+                "\n Valor pagado por concepto de IVA: $" + valorIVA_Hidratante();
     }
 
     public double valorPagadoHidratante() {
@@ -38,11 +38,11 @@ public class Hidratante {
     }
 
     public double valorReal_Hidratante() {
-        return (unidadesG * 2000 + unidadesR * 2450)/1.16 + unidadesA * 1000/(1+0.0/100) ;
+        return (unidadesG * 2000 + unidadesR * 2450) / 1.16 + unidadesA * 1000;
     }
 
     public double valorIVA_Hidratante() {
-        return (unidadesG * 2000 + unidadesR * 2450)*0.16;
+        return (unidadesG * 2000 + unidadesR * 2450) * 0.16;
     }
 
 

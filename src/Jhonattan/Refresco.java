@@ -14,18 +14,20 @@ public class Refresco {
     @Override
     public String toString() {
         return "Unidades de refresco: " + unidades +
-                "Valor pagado por refrescos: " + valorPagadoRefresco() +
-                "Valor pagado por IVA: " + valorIVA_Refresco();
+                " Valor pagado por refrescos: $" + valorPagadoRefresco() +
+                " Valor pagado por IVA: $" + valorIVA_Refresco();
     }
 
-    public double valorPagadoRefresco(){
-        return 1500* unidades;
+    public double valorPagadoRefresco() {
+        return 1500 * unidades;
     }
-    public  double valorReal_Refresco(){
-        return valorPagadoRefresco() ;
+
+    public double valorReal_Refresco() {
+        return valorPagadoRefresco();
     }
-    public double valorIVA_Refresco(){
-        return 0 ;
+
+    public double valorIVA_Refresco() {
+        return 0;
     }
 
 }
